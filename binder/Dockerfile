@@ -25,7 +25,7 @@ RUN chmod 755 /root
 RUN  R -e 'install.packages(c("huxtable","fractional","bookdown","rticles","rmdshower","kableExtra","printr", \ 
        "rmdTemplates","flextable","officer","shinydashboard","xaringan","openxlsx","eurostat","DT","leaflet"))'
 RUN  R -e 'install.packages(c("hflights","nycflights13","sparklyr","RSQLite","stargazer","reticulate"))'
-RUN  R -e 'devtools::install_github("rstudio/radix")'
+#RUN  R -e 'devtools::install_github("rstudio/radix")'
 RUN service rstudio-server stop
 RUN  apt-get -y install gdebi-core
 

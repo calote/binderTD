@@ -1,0 +1,7 @@
+https://mybinder.org/v2/gh/seabbs/thesis/master?urlpath=rstudio
+
+https://github.com/calote/binderTD/blob/master/binder/Dockerfile
+
+final:
+  
+https://mybinder.org/v2/gh/calote/binderTD/master?urlpath=rstudio
