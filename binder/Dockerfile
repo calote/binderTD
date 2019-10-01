@@ -29,9 +29,11 @@ RUN  R -e 'install.packages(c("hflights","nycflights13","sparklyr","RSQLite","st
 RUN service rstudio-server stop
 RUN  apt-get -y install gdebi-core
 
-RUN wget https://s3.amazonaws.com/rstudio-ide-build/server/trusty/amd64/rstudio-server-1.2.1000-amd64.deb
-RUN gdebi -n rstudio-server-1.2.1000-amd64.deb
-RUN rm -rf rstudio-server-1.2.1000-amd64.deb
+#RUN wget https://s3.amazonaws.com/rstudio-ide-build/server/trusty/amd64/rstudio-server-1.2.1000-amd64.deb
+#RUN gdebi -n rstudio-server-1.2.1000-amd64.deb
+RUN wget https://download2.rstudio.org/server/trusty/amd64/rstudio-server-1.2.5001-amd64.deb
+RUN gdebi rstudio-server-1.2.5001-amd64.deb
+
 RUN service rstudio-server start
 
 RUN apt-get update && apt-get -y install \
@@ -42,6 +44,9 @@ RUN apt-get update && apt-get -y install \
      install2.r --error keras 
 
 RUN  R -e 'update.packages(ask = FALSE)'
+
+#RUN rm -rf rstudio-server-1.2.1000-amd64.deb
+RUN rm -rf rstudio-server-1.2.5001-amd64.deb
 
 RUN tlmgr install fancyhdr microtype psnfss setspace titlesec placeins palatino mathpazo
 
