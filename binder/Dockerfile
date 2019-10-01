@@ -17,4 +17,4 @@ USER ${NB_USER}
 
 #RUN R -e "packrat::restore()"
 
-RUN R -e "source('.Rprofile'); install.packages('tinytex'); tinytex::install_tinytex()"
+#RUN R -e "source('.Rprofile'); install.packages('tinytex'); tinytex::install_tinytex()"

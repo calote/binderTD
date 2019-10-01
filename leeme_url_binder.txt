@@ -3,6 +3,8 @@ https://mybinder.org/v2/gh/seabbs/thesis/master?urlpath=rstudio
 
 Se encuentra en: <https://github.com/seabbs/thesis/blob/master/binder/Dockerfile>
 
+<https://mybinder.org/v2/gh/seabbs/seabbs/master?urlpath=rstudio>
+
 ---
 
 https://github.com/calote/binderTD/blob/master/binder/Dockerfile
@@ -13,8 +15,12 @@ https://github.com/calote/binderTD/blob/master/binder/Dockerfile
 
 final:
   
-https://mybinder.org/v2/gh/calote/binderTD/master?urlpath=rstudio
+
+https://mybinder.org/v2/gh/calote/binderTD/master
+
+https://mybinder.org/v2/gh/calote/binderTD/master?urlpath=rstudio (apuntaría a la subcarpeta del repositorio Github: rstudio)
 
 
+---
 
 http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=shiny/bus-dashboard/
