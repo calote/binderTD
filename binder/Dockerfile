@@ -7,7 +7,7 @@ RUN apt-get update \
 libudunits2-dev \
 libqpdf-dev \
 libnetcdf-dev \
-libmagick++-dev
+libmagick++-dev \
 && apt-get clean
 
 COPY . ${HOME}
